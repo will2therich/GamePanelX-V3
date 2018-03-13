@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `default_games` (
   `install_mirrors` varchar(600) NOT NULL,
   `install_cmd` varchar(600) NOT NULL,
   `update_cmd` varchar(600) NOT NULL,
-  `simplecmd` varchar(600) NOT NULL,
+  `simplecmd` varchar(600) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `intname` (`intname`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
